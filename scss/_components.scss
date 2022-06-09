@@ -1,0 +1,144 @@
+// ===========================================HEADER====================================
+header{ 
+
+    .header-content{
+        flex-direction: column;
+        // z-index: 0;
+        margin-top: 30px;
+        row-gap: 12px;
+        overflow-y: hidden;
+    }
+    .title-logo{
+        @include flexcenter();
+        column-gap: 20px;
+    }
+    
+    h3{
+        font-family: $font2;
+        color: $gray;
+        font-weight: 300;
+        font-size: 80px;
+    }
+    .smaller-h3{
+        @extend h3;
+        font-size: 60px;
+    }
+   
+    .welcome-sign{
+        margin-bottom: 63px;
+        p{color: $gold;font-family: $font1;font-size: 80px; height: 120px;}
+        // height: 120px;
+    }
+    .try-food{
+        p{
+            color: $gray;
+            font-family: $font2;
+            font-size: 50px;
+        }
+        margin-bottom: 36px;
+    }
+ }
+ .buttons{
+    font-family: $font2;
+    font-size: 18px;
+    height: 70px;
+    width: 165px;
+    color: $gold;
+    background: none;
+    border: 1px solid $gold;
+    transition: all .4s;
+    cursor: pointer;
+    &:hover{
+        background-color: $gold;
+        color: black;
+        // z-index: 22;
+    }
+ }
+ .yellow-overlay{
+     h1{
+         font-family: $font1;
+         font-size: 70px;
+         font-weight: 300;
+         color: $white;
+     }
+     p{
+        font-family: $font2;
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 300;
+        color: $white;
+     }
+     button{
+        font-family: $font2;
+        color: $gold;
+        background-color: $white;
+        border-radius: 30px;
+        width: 150px;
+        height: 40px;
+        border: 1px solid $gold;
+     }
+     
+ }
+
+
+
+//  ========================================FOOTER=============================================
+
+
+
+
+.inner-footer{
+    @include flexcenter();
+    background-color: $dark;
+    flex-direction: column;
+    .logo-footer{
+        // i{
+        //     font-weight: 900;
+        // }
+        .logo-content{
+            margin-left: 20px;
+            float: right;
+            margin-top: 12px;
+            h1{
+                font-size: 50px;
+                font-family: $font2;
+                color: $gray;
+                font-weight: 800;
+            }
+            p{
+               font-size: 20px;
+               color: $gray; 
+               position: relative;
+               right: -100px;
+            }
+        }
+    }
+    .contact-us{
+        .social-media{
+            margin-top: 70px;
+            margin-right: -35px;
+            &-item{
+
+              display: inline-block;  
+            //   margin-right: 10px;
+                a{
+                    width: 50px;
+                    height: 50px;
+                i{
+                margin-right: 35px;    
+                z-index: 120;
+                color: $gray;
+                font-size: 50px;
+                transition: color .7s;
+                &:hover{
+                    color: $gold;
+                }
+            }
+            }
+        }
+        }    
+    }
+}
+
+
+

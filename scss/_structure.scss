@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Sahel-Black';
+    src: url("../fonts/Sahel-Black.eot") format('eot');
+    src: url("../fonts/Sahel-Black.ttf") format('ttf');
+    src: url("../fonts/Sahel-Black.woff") format('woff');
+}
+@font-face {
+    font-family: 'Sahel-Bold';
+    src: url("../fonts/Sahel-Bold.eot");
+    src: url("../fonts/Sahel-Bold.ttf");
+    src: url("../fonts/Sahel-Bold.woff");
+}
+@font-face {
+    font-family: 'Sahel';
+    src: url('../fonts/Sahel.eot');
+    src: url('../fonts/Sahel.ttf');
+    src: url('../fonts/Sahel.woff');
+}
+@font-face {
+    font-family: 'IranNastaliq';
+    src: url('../fonts/IranNastaliq.ttf');
+}
+@mixin background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@mixin flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+$gold :#d3ab55;
+$gray :#bbb;
+$dark :#262626;
+$white : #FFFFFF;
+$first-overlay-color : linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+$second-overlay-color: rgba(0,0,0,.4);
+$font1:IranNastaliq;
+$font2:Sahel;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+.flex{
+    display: flex;
+}
+
+.header-logo{
+    font-size: 100px;
+    color: $gold;
+    border-radius: 100%;
+    border: 3px solid $gold;
+    padding: 18px 22px;
+}
+
+ul{
+    list-style: none;
+}
