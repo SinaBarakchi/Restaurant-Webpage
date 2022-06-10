@@ -25,7 +25,11 @@ nav {
             transform-origin: right;
         }
         }
-    
+    @media(max-width:500px){
+        top: 5%;
+        width: 30px;
+        height: 25px;
+    }
     } 
     .nav{
         @include flexcenter();
@@ -91,6 +95,18 @@ nav {
         }
         
     }
+    @media(max-width:800px){
+        .nav{
+            right: -100vw;
+            width: 100vw;
+            a{
+                font-size:  20px ;
+            }
+        }
+        .dish-nav{
+            display: none;
+        }
+    }
 }
 
 
@@ -123,7 +139,6 @@ nav {
 
 
 .header{
-   
     @include background();
     background-image: url("../images/bg.jpeg");
     height: 100vh;
@@ -171,6 +186,21 @@ nav {
             }
         }
     }
+    @media(max-width:576.98px){
+        .logo{
+            font-size: 40px;
+        }
+        .content-logo{
+            h3{
+               font-size: 30px;
+            }
+            p{
+               font-size: 25px;
+            }
+        }
+    
+    }
+  
     }
 
 
@@ -239,6 +269,31 @@ body{
         }
     }
 
+    }
+    @media(max-width:800px){
+        .my-cooking{
+            font-size: 40px !important;
+        }
+        .resturant{
+            font-size: 55px !important;
+        }
+        button{
+            height: 40px;
+            width: 140px;
+            font-size: 12px;
+        }
+        
+    }
+    @media(max-width:500px){
+        .my-cooking{
+            font-size: 25px !important;
+        }
+        .resturant{
+            font-size: 45px !important;
+        }
+        p{    
+            font-size: 20px !important;
+        }
     }
 
 }
@@ -328,6 +383,50 @@ body{
         font-family: $font2;
         font-size: 20px;
     }
+    @media(max-width:800px){
+       .header-logo{
+            font-size: 60px;
+        }
+        .logo-content{
+            h1{
+                font-size: 35px !important;
+            }
+            p{
+                right: -39px !important;
+            }
+        }
+        .copyright{
+            margin: 20px;
+            // color: $gray;
+            // font-family: $font2;
+            font-size: 15px;
+        }
+        i{
+            margin-right: 27px !important;
+        }
+    }
+    @media(max-width:500px){
+        .header-logo{
+             font-size: 40px;
+         }
+         .logo-content{
+             h1{
+                 font-size: 25px !important;
+             }
+             p{
+                 right: -10px !important;
+             }
+         }
+         .copyright{
+             margin: 20px;
+             // color: $gray;
+             // font-family: $font2;
+             font-size: 12px;
+         }
+         i{
+             margin-right: 20px !important;
+         }
+     }
 }
 
 

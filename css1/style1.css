@@ -81,6 +81,14 @@ nav .hamburger-menu .burger .line {
   transform-origin: right;
 }
 
+@media (max-width: 500px) {
+  nav .hamburger-menu {
+    top: 5%;
+    width: 30px;
+    height: 25px;
+  }
+}
+
 nav .nav {
   display: flex;
   justify-content: center;
@@ -150,6 +158,19 @@ nav .dish-nav .nav-pic-2 {
 nav .dish-nav .nav-pic-3 {
   top: 55%;
   left: 35%;
+}
+
+@media (max-width: 800px) {
+  nav .nav {
+    right: -100vw;
+    width: 100vw;
+  }
+  nav .nav a {
+    font-size: 20px;
+  }
+  nav .dish-nav {
+    display: none;
+  }
 }
 
 .checkbox:checked ~ .hamburger-menu .burger {
@@ -222,6 +243,18 @@ nav .dish-nav .nav-pic-3 {
   }
 }
 
+@media (max-width: 576.98px) {
+  .header .header-content .logo {
+    font-size: 40px;
+  }
+  .header .header-content .content-logo h3, .header .header-content .content-logo header .smaller-h3, header .header .header-content .content-logo .smaller-h3 {
+    font-size: 30px;
+  }
+  .header .header-content .content-logo p {
+    font-size: 25px;
+  }
+}
+
 body {
   z-index: -4;
 }
@@ -288,6 +321,32 @@ body {
 
 .about-resturant .about-content .star-icons i {
   color: #d3ab55;
+}
+
+@media (max-width: 800px) {
+  .about-resturant .my-cooking {
+    font-size: 40px !important;
+  }
+  .about-resturant .resturant {
+    font-size: 55px !important;
+  }
+  .about-resturant button {
+    height: 40px;
+    width: 140px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-resturant .my-cooking {
+    font-size: 25px !important;
+  }
+  .about-resturant .resturant {
+    font-size: 45px !important;
+  }
+  .about-resturant p {
+    font-size: 20px !important;
+  }
 }
 
 .grid-slider {
@@ -386,6 +445,44 @@ body {
   color: #bbb;
   font-family: Sahel;
   font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .inner-footer .header-logo {
+    font-size: 60px;
+  }
+  .inner-footer .logo-content h1 {
+    font-size: 35px !important;
+  }
+  .inner-footer .logo-content p {
+    right: -39px !important;
+  }
+  .inner-footer .copyright {
+    margin: 20px;
+    font-size: 15px;
+  }
+  .inner-footer i {
+    margin-right: 27px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .inner-footer .header-logo {
+    font-size: 40px;
+  }
+  .inner-footer .logo-content h1 {
+    font-size: 25px !important;
+  }
+  .inner-footer .logo-content p {
+    right: -10px !important;
+  }
+  .inner-footer .copyright {
+    margin: 20px;
+    font-size: 12px;
+  }
+  .inner-footer i {
+    margin-right: 20px !important;
+  }
 }
 
 header .header-content {
