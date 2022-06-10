@@ -392,6 +392,54 @@ body {
   flex-direction: column;
 }
 
+@media (max-width: 1000px) {
+  .grid-slider .g-items .yellow-overlay h1 {
+    font-size: 40px;
+  }
+  .grid-slider .g-items .yellow-overlay p {
+    font-size: 25px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-slider .g-items .yellow-overlay h1 {
+    font-size: 40px;
+  }
+  .grid-slider .g-items .yellow-overlay p {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  .grid-slider .g-items .yellow-overlay button {
+    width: 109px;
+    height: 29px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-slider .g-items .yellow-overlay h1 {
+    font-size: 30px;
+  }
+  .grid-slider .g-items .yellow-overlay p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-slider .g-items .yellow-overlay h1 {
+    font-size: 25px;
+  }
+  .grid-slider .g-items .yellow-overlay p {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .grid-slider .g-items .yellow-overlay button {
+    width: 76px;
+    height: 21px;
+  }
+}
+
 .grid-slider .sandwich {
   background-repeat: no-repeat;
   background-size: cover;
